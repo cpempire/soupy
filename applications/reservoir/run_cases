@@ -1,0 +1,25 @@
+# run cases with different mesh sizes
+
+cd mesh1
+rm iterate.dat
+mpirun -n 1 python reservoirOUU.py
+
+cd ../mesh2
+rm iterate.dat
+mpirun -n 1 python reservoirOUU.py
+
+cd ../mesh3
+rm iterate.dat
+mpirun -n 1 python reservoirOUU.py
+
+cd ../mesh4
+rm iterate.dat
+mpirun -n 1 python reservoirOUU.py
+
+cd ../mesh5
+rm iterate.dat
+mpirun -n 1 python reservoirOUU.py
+
+cd ../mesh6
+rm iterate.dat
+mpirun -n 1 python reservoirOUU.py

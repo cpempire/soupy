@@ -1,0 +1,7 @@
+rm iterate.dat
+rm data/*
+rm data/constant/*
+rm data/linear/*
+rm data/quadratic/*
+rm data/saa/*
+rm figure/*

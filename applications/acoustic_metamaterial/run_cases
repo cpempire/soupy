@@ -1,0 +1,22 @@
+# run cases with different mesh sizes
+
+cd one_frequency_one_source
+mpirun -n 4 python helmholtzOUU.py
+
+cd ../one_frequency_four_source
+mpirun -n 4 python helmholtzOUU.py
+
+cd ../four_frequency_one_source
+mpirun -n 4 python helmholtzOUU.py
+
+cd ../four_frequency_four_source
+mpirun -n 4 python helmholtzOUU.py
+
+cd ../one_frequency_sixteen_source
+mpirun -n 4 python helmholtzOUU.py
+
+cd ../sixteen_frequency_one_source
+mpirun -n 4 python helmholtzOUU.py
+
+cd ../sixteen_frequency_sixteen_source
+mpirun -n 4 python helmholtzOUU.py
