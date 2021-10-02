@@ -14,7 +14,7 @@ high-level formulation, discretization, and scalable solution of
 PDEs. 
 
 SOUPy has been developed and in active development to
-incorporate advanced algorithms and capabilities, including 
+incorporate advanced approximation algorithms and capabilities, including 
 - PDE-constrained operator/tensor/matrix products,
 - symbolic differentiation (of appropriate Lagrangians) for the
 derivation of high order mixed derivatives (via the FEniCS interface),
@@ -25,18 +25,12 @@ derivation of high order mixed derivatives (via the FEniCS interface),
 - common interfaces for random fields, PDE models, probability/risk
 measures, and control/design/inversion constraints. 
 
-The numerical optimization algorithms is built on those implemented
-in [SciPy](https://www.scipy.org/), a Python-based
-ecosystem of open-source software that includes a basic linear algebra
-library implementing linear system and eigenvalue solvers, matrix
-factorization, and an optimization library implementing such methods
-as limited-memory BFGS, line search and trust region Newton-CG
-algorithms, and others. These optimization methods are a good place to
-start; however, they are not aimed at PDE-constrained optimization
-problems and therefore do not respect the underlying
+Numerical optimization algorithms can be called from [SciPy](https://www.scipy.org/) if used for low-dimensional optimization in serial computation. For high-dimensional optimization with large-scale PDE model solved by parallel computation, we offer parallel optimization algorithms such as 
+- limited-memory BFGS with bound constraints, 
+- line search or trust region inexact Newton-CG, 
+which respect the underlying
 infinite-dimensional nature of the optimization problem, including
 function spaces-aware norms, spectrally-equivalent preconditioners for
 Hessians, regularizations for Lagrange multipliers for pointwise
 inequality control and state constraints, and recognition of the
-hierarchy of discretizations. As a result they generally do not
-deliver mesh-independent convergence. The optimization algorithms incorporated into SOUPy from [hIPPYlib](https://hippylib.github.io/) are infinite dimension-aware.
+hierarchy of discretizations. The complexity has been demonstrated to be PDE discretization-independent.
