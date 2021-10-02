@@ -5,9 +5,8 @@ Stochastic Optimization under high-dimensional Uncertainty in Python
 
 SOUPy implements scalable algorithms to solve problems of PDE-constrained optimization under uncertainty, with the computational complexity measured in terms of PDE solves independent of the uncertain parameter dimension and optimization variable dimention. 
 
-SOUPy is built on the open-source [hIPPYlib]
-library 
-(https://hippylib.github.io/), which provides state-of-the-art
+SOUPy is built on the open-source [hIPPYlib](https://hippylib.github.io/)
+library, which provides state-of-the-art
 scalable adjoint-based methods for deterministic and Bayesian inverse
 problems governed by PDEs, which in turn makes use of the
 \textbf{FEniCS} library (\url{https://fenicsproject.org/}) for
