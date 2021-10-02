@@ -15,22 +15,18 @@ PDEs.
 
 SOUPy has been developed and in active development to
 incorporate advanced algorithms and capabilities, including 
-- PDE-constrained tensor products,
+- PDE-constrained operator/tensor/matrix products,
 - symbolic differentiation (of appropriate Lagrangians) for the
 derivation of high order mixed derivatives (via the FEniCS interface),
 - randomized algorithms for matrix and high order tensor decomposition,
 - decomposition of uncertain parameter spaces by mixture models,
-- product convolution approximations, 
 - Taylor expansion-based high-dimensional control variates, and 
-- inexact trust region preconditioned Newton-CG optimization methods. 
-
-In addition, the library incorporates
-common interfaces for random fields, PDE models, probability/risk
+- product convolution approximations, 
+- common interfaces for random fields, PDE models, probability/risk
 measures, and control/design/inversion constraints. 
 
-The numerical
-optimization algorithms will build on those implemented
-in \textbf{SciPy} (\url{https://www.scipy.org/}), a Python-based
+The numerical optimization algorithms is built on those implemented
+in [SciPy](https://www.scipy.org/), a Python-based
 ecosystem of open-source software that includes a basic linear algebra
 library implementing linear system and eigenvalue solvers, matrix
 factorization, and an optimization library implementing such methods
@@ -43,6 +39,4 @@ function spaces-aware norms, spectrally-equivalent preconditioners for
 Hessians, regularizations for Lagrange multipliers for pointwise
 inequality control and state constraints, and recognition of the
 hierarchy of discretizations. As a result they generally do not
-deliver mesh-independent convergence. The optimization algorithms in
-hIPPYlib {\em are} infinite dimension-aware, and will be employed to
-extend the SciPy algorithms for incorporation into SOUPy.
+deliver mesh-independent convergence. The optimization algorithms incorporated into SOUPy from [hIPPYlib](https://hippylib.github.io/) are infinite dimension-aware.
