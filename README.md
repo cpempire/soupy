@@ -25,12 +25,11 @@ derivation of high order mixed derivatives (via the FEniCS interface),
 - common interfaces for random fields, PDE models, probability/risk
 measures, and control/design/inversion constraints. 
 
-Numerical optimization algorithms can be called from [SciPy](https://www.scipy.org/) if used for low-dimensional optimization in serial computation. For high-dimensional optimization with large-scale PDE model solved by parallel computation, we offer distributed parallel optimization algorithms including 
+Numerical optimization algorithms can be called from [SciPy](https://www.scipy.org/) if used for low-dimensional optimization in serial computation. For high-dimensional optimization with large-scale PDE model solved by parallel computation, we provide distributed parallel optimization algorithms including 
 - limited-memory BFGS with bound constraints, 
 - line search or trust region inexact Newton-CG, 
 
-which respect the underlying
-infinite-dimensional nature of the optimization problem, including
+which respect the underlying infinite-dimensional nature of the optimization problem, including
 function spaces-aware norms, spectrally-equivalent preconditioners for
 Hessians, regularizations for Lagrange multipliers for pointwise
 inequality control and state constraints, and recognition of the
