@@ -28,6 +28,7 @@ measures, and control/design/inversion constraints.
 Numerical optimization algorithms can be called from [SciPy](https://www.scipy.org/) if used for low-dimensional optimization in serial computation. For high-dimensional optimization with large-scale PDE model solved by parallel computation, we offer parallel optimization algorithms such as 
 - limited-memory BFGS with bound constraints, 
 - line search or trust region inexact Newton-CG, 
+
 which respect the underlying
 infinite-dimensional nature of the optimization problem, including
 function spaces-aware norms, spectrally-equivalent preconditioners for
