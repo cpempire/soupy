@@ -15,14 +15,14 @@ PDEs.
 
 SOUPy has been developed and in active development to
 incorporate advanced algorithms and capabilities, including 
--PDE-constrained tensor products,
--symbolic differentiation (of appropriate Lagrangians) for the
+- PDE-constrained tensor products,
+- symbolic differentiation (of appropriate Lagrangians) for the
 derivation of high order mixed derivatives (via the FEniCS interface),
--randomized algorithms for matrix and high order tensor decomposition,
--decomposition of uncertain parameter spaces by mixture models,
--product convolution approximations, 
--Taylor expansion-based high-dimensional control variates, and 
--inexact trust region preconditioned Newton-CG optimization methods. 
+- randomized algorithms for matrix and high order tensor decomposition,
+- decomposition of uncertain parameter spaces by mixture models,
+- product convolution approximations, 
+- Taylor expansion-based high-dimensional control variates, and 
+- inexact trust region preconditioned Newton-CG optimization methods. 
 
 In addition, the library incorporates
 common interfaces for random fields, PDE models, probability/risk
