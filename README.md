@@ -9,7 +9,7 @@ SOUPy is built on the open-source [hIPPYlib](https://hippylib.github.io/)
 library, which provides state-of-the-art
 scalable adjoint-based methods for deterministic and Bayesian inverse
 problems governed by PDEs, which in turn makes use of the
-\textbf{FEniCS} library (\url{https://fenicsproject.org/}) for
+[FEniCS](https://fenicsproject.org/) library for
 high-level formulation, discretization, and scalable solution of
 PDEs. It has been developed and in active development to
 incorporate advanced algorithms and capabilities, including PDE-constrained tensor products,
