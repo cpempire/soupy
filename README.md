@@ -11,18 +11,24 @@ scalable adjoint-based methods for deterministic and Bayesian inverse
 problems governed by PDEs, which in turn makes use of the
 [FEniCS](https://fenicsproject.org/) library for
 high-level formulation, discretization, and scalable solution of
-PDEs. It has been developed and in active development to
-incorporate advanced algorithms and capabilities, including PDE-constrained tensor products,
-symbolic differentiation (of appropriate Lagrangians) for the
+PDEs. 
+
+SOUPy has been developed and in active development to
+incorporate advanced algorithms and capabilities, including 
+-PDE-constrained tensor products,
+-symbolic differentiation (of appropriate Lagrangians) for the
 derivation of high order mixed derivatives (via the FEniCS interface),
-randomized algorithms for matrix and high order tensor decomposition,
-decomposition of uncertain parameter spaces by mixture models,
-product convolution approximations, Taylor expansion-based
-high-dimensional control variates, and inexact trust region
-preconditioned Newton-CG optimization methods (as well as simpler
-optimization algorithms). In addition, the library incorporates
+-randomized algorithms for matrix and high order tensor decomposition,
+-decomposition of uncertain parameter spaces by mixture models,
+-product convolution approximations, 
+-Taylor expansion-based high-dimensional control variates, and 
+-inexact trust region preconditioned Newton-CG optimization methods. 
+
+In addition, the library incorporates
 common interfaces for random fields, PDE models, probability/risk
-measures, and control/design/inversion constraints. The numerical
+measures, and control/design/inversion constraints. 
+
+The numerical
 optimization algorithms will build on those implemented
 in \textbf{SciPy} (\url{https://www.scipy.org/}), a Python-based
 ecosystem of open-source software that includes a basic linear algebra
